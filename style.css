@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+}
+#main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 5vh 40vh 50% 5%;
+  grid-template-areas:
+    't t'
+    'ia ib'
+    'd a'
+    'li a';
+}
+
+#title {
+  grid-area: t;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(164, 233, 155);
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#img-div {
+  grid-area: ia;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-div2 {
+  grid-area: ib;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 25px;
+}
+
+#image {
+  max-width: 100%;
+  max-height: 30vh;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#image2 {
+  max-width: 100%;
+  max-height: 30vh;
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 5px;
+}
+
+#tribute-info {
+  grid-area: d;
+  display: flex;
+  margin: 5px 25px;
+  text-align: justify;
+}
+
+#info {
+  grid-area: a;
+  margin: 5px 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  height: 25px;
+  padding: 5px;
+}
+
+#link {
+  grid-area: li;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+a:hover {
+  color: red;
+}

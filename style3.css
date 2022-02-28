@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(166, 166, 166);
+  font-family: Nunito, lato, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  background: black;
+  color: white;
+  font-weight: 600;
+}
+a {
+  color: blue;
+}
+a:hover {
+  color: rgb(188, 0, 0);
+}
+a:visited {
+  color: cyan;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    text-transform: uppercase;
+  }
+}
+
+button {
+  background: rgb(226, 226, 226);
+  text-align: left;
+}
+#main-doc {
+  padding: 20px;
+  margin-left: 100px;
+}

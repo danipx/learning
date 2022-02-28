@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style1.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div id="form">
+      <h1 id="title">Survey</h1>
+      <p id="description">Please fill the form below</p>
+
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Dani Smith"
+          required
+        /><br />
+        <br />
+        <label for="gender">Gender:</label><br />
+        <select name="gender" id="dropdown">
+          <option value="female">Support</option>
+          <option value="male">Sugestion</option>
+          <option value="trans">Complaint</option>
+          <option value="other">Not listed</option>
+        </select>
+        <br /><br />
+
+        <label for="email" id="email-label">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+        /><br />
+        <br />
+
+        <label for="number" id="number-label">Age:</label><br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="18"
+          max="150"
+          placeholder="30"
+        /><br />
+        <br />
+        <hr />
+        <!--RADIO
+OPTION
+
+      -->
+
+        <ol>
+          <li>
+            <h3>What type of car do you prefer</h3>
+            <div>
+              <input type="radio" name="car-type" id="micro" value="micro" />
+              <label for="micro">Micro</label>
+            </div>
+            <div>
+              <input type="radio" name="car-type" id="hatch" value="hatch" />
+              <label for="hatch">Hatch</label>
+            </div>
+            <div>
+              <input type="radio" name="car-type" id="sedan" value="sedan" />
+              <label for="sedan">Sedan</label>
+            </div>
+            <div>
+              <input type="radio" name="car-type" id="suv" value="suv" />
+              <label for="suv">SUV</label>
+            </div>
+          </li>
+          <li>
+            <h3>How often do you change your car?</h3>
+            <div>
+              <input
+                type="radio"
+                name="change-frequency"
+                id="less-than-two"
+                value="less-than-two"
+              />
+              <label for="less-than-two">less than 2 years</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="change-frequency"
+                id="less-than-three"
+                value="less-than-three"
+              />
+              <label for="less-than-three">less than 3 years</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="change-frequency"
+                id="less-than-five"
+                value="less-than-five"
+              />
+              <label for="less-than-five">less than 5 years</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="change-frequency"
+                id="more-than-five"
+                value="more-than-five"
+              />
+              <label for="more-than-five">more than 5 years</label>
+            </div>
+          </li>
+        </ol>
+
+        <div>
+          <label for="contact-preference"
+            >Please select how you want to be contacted</label
+          ><br />
+          <hr />
+          <input
+            type="checkbox"
+            name="contact-preference"
+            id="email"
+            value="email"
+            checked
+          />
+          <label for="email">E-mail</label><br />
+          <input
+            type="checkbox"
+            name="contact-preference"
+            id="sms"
+            value="sms"
+          />
+          <label for="sms">SMS</label><br />
+          <input
+            type="checkbox"
+            name="contact-preference"
+            id="call"
+            value="call"
+          />
+          <label for="call">Phone Call</label><br />
+        </div>
+        <br /><label for="message">Message:</label><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Write an additional message"
+        ></textarea>
+        <br />
+        <button type="submit" id="submit">SEND</button>
+      </form>
+    </div>
+  </body>
+</html>
